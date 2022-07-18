@@ -1,0 +1,33 @@
+.content-container{
+position: relative;
+display: inline-block;
+}
+.sale-picture{
+    width: 300px;
+    height: 350px;
+}
+.sale-off{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    top: 10px;
+    right: 0px;
+}
+.sale-add{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.788);
+    width: 100%;
+    height: 120px;
+    bottom :0px;
+    align-items: center;
+    justify-content: center;
+}
+.sale-btn{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
