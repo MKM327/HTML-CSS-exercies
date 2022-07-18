@@ -1,0 +1,92 @@
+button{
+    margin-right: 20px;
+}
+.sub{
+    background-color: rgb(186, 2, 2);
+    color: white;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+
+}
+.join{
+    padding: 10px 10px 10px 10px;
+    border: solid blue 1px;
+    background-color: white;
+    border-radius: 2px;
+    font-weight: bold;
+    color: blue;
+}
+.tweet{
+    height: 50px;
+    width: 70px;
+    background-color: rgb(24,123,205);
+
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.amazon{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(254,209,20)
+}
+.amazon:hover{
+    background-color: rgb(246,194,2)
+}
+.github{
+    width: 100px;
+    height: 50px;
+    color:white;
+    font-weight: bold;
+    background-color: rgb(41,155,71);
+    border: none;
+    border-radius:10px;
+    transition: box-shadow 0.2s;
+}
+.github:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15)
+
+
+}
+.bootstrap{
+    width: 120px;
+    padding: 20px  10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.get-started{
+    border: none;
+    color: white;
+    background-color: rgb(100,65,157);
+    transition: background-color .7s;
+}
+.get-started:hover{
+    background-color: hsl(265,40%,34%);
+    
+}
+.download{
+    border: solid 1px gray;
+    color: rgb(115,117,124);
+    background-color: white;
+    transition: background-color .8s,color .8s;
+}
+.download:hover{
+    background-color: rgb(115,117,124);
+    color: white;
+
+}
+.stretch{
+    border :none;
+    color :white;
+    background-color:rgb(2,116,3);
+    padding: 10px 20px;
+    transition: padding 1s;
+}
+.stretch:hover{
+    padding: 20px 30px;
+}

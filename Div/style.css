@@ -1,0 +1,25 @@
+.card-image{
+    display: block;
+    width: 180px;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.card-text{
+    display: block;
+    color: rgb(94, 94, 94);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(58,117,234);
+    color: white;
+}
+.card{
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}

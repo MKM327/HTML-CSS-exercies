@@ -1,0 +1,86 @@
+.flex-nav{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    background-color: rgb(101,73,152);
+    align-items: center;
+}
+.flex-home{
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.flex-search-div{
+    display: flex;
+    width: 500px;
+
+}
+.flex-search{
+    height: 30px;
+    width: 1fr;
+    width: 0;
+    border-radius: 30px;
+    border: none;
+    padding: 0 5px;
+    width: 100%;
+}
+body{
+    margin: 0px;
+}
+.flex-btn{
+    border: solid 1px white;
+    background-color: rgb(101,73,152);
+    color: white;
+    padding: 10px 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.card-flex{
+    display: flex;
+    margin-top: 10px;
+}
+
+.gmail-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.gmail-text-div{
+    margin-left: 10px;
+}
+.gmail-container{
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.15);
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.twitter-flex{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.15);
+    padding: 5px 10px;
+
+}
+.twitter-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.twitter-link{
+    display: flex;
+    border: solid 1px gray;
+    border-radius: 10px
+
+
+}
+.twitter-link-bc{
+    background-color: gray;
+    width: 50px;
+    border-radius: 10px 0 0px 10px;
+
+}
+p{
+    margin: 6px;
+}
