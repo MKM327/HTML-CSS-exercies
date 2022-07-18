@@ -1,0 +1,33 @@
+.side-img{
+    display: block;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.side-images{
+    background-color: rgb(44, 44, 48);
+    padding: 10px 10px 0 10px;
+
+}
+.side-container{
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.side-channel-text{
+    color: gray;
+}
+.side-info{
+    background-color: rgb(57, 58, 63);
+    width: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.side-info-bar{
+    display: flex;
+    justify-content: space-between;
+}
