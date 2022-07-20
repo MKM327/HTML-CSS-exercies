@@ -1,0 +1,11 @@
+.toolbar-flex{
+    display: flex;
+    gap: 10rem;
+}
+.toolbar-checkbox{
+    width: 50px;
+
+}
+ul{
+    list-style-type: none;
+}
