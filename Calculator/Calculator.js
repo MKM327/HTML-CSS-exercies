@@ -30,7 +30,7 @@ const getNumbers = (inputStr = undefined) => {
   let numberString = inputStr.split(/[+x-÷]/g);
   return numberString.map(Number);
 };
-const equalPressed = (getNumbers) => {
+const equalPressed = () => {
   let value = inputArea.textContent;
   let numbers = value.split(/[\x÷+-]+/).map(Number);
   var operators = value.replace(/[0-9]|\./g, "").split("");
