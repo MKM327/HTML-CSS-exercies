@@ -5,25 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Todo App</title>
   </head>
   <body>
-    <div class="container">
-      <h2 class="todo-header">Todo App</h2>
-      <div class="input-area">
+    <select name="select" id="todo-select" class="todo-select">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+    <div class="wrapper wrapper-dark">
+      <div class="container">
+        <h2 class="todo-header">Todo App</h2>
+        <div class="input-area">
           <input class="input-text" name="task" type="text" />
           <button class="input-btn">Save</button>
-      </div>
-      <div class="todo-content">
-        <div class="todo-item">
+        </div>
+        <div class="todo-content">
+          <div class="todo-item">
             <span>asdaskdjkşaşa</span>
             <div>
-                <button>X</button>
-                <button>U</button>
+              <button>X</button>
+              <button>U</button>
             </div>
+          </div>
         </div>
       </div>
     </div>

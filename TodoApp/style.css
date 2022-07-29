@@ -5,10 +5,7 @@ html{
 body{
     margin: 0px;
     height: 100%;
-    display: flex;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    justify-content: center;
+
 }
 .container{
     text-align: center;
@@ -47,4 +44,38 @@ color: black;
 }
 .input-text:focus{
     outline: none;
+    
+}
+.wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+.todo-select{
+position: absolute;
+right: 10px;
+top: 10px;
+width: 10em;
+-webkit-appearance: none;
+-moz-appearance: none;
+text-indent: 1px;
+text-overflow: '';
+text-align: center;
+border-radius: 5px;
+background-color: rgb(37,88,179);
+color: white;
+padding: .2em;
+}
+.todo-select:focus{
+    border: none;
+}
+.wrapper-dark{
+    background-color: black;
+    color: white;
+}
+.wrapper-dark button{
+    background-color: white;
+    color: black;
 }
