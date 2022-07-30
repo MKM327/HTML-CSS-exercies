@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Popup</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="btn-wrapper">
+        <button class="popup-btn" onclick="popupOpen()">Click Me</button>
+        <div class="popup-menu" id="popup">
+          <span>asdads</span>
+          <button class="popup-btn" onclick="popupClose()">Close</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function popupOpen() {
+        let popup = document.getElementById("popup");
+        console.log(popup.classList);
+        popup.classList.add("popup-open");
+      }
+      function popupClose() {
+        document.getElementById("popup").classList.remove("popup-open");
+        console.log("asd");
+      }
+    </script>
+  </body>
+</html>
