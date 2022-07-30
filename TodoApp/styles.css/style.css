@@ -16,6 +16,11 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.todo-content{
+    border: solid 1px black;
+    padding: 4px;
+    margin-top: 5px;
+}
 .input-text{
     width: 90%;
     border-radius: 10px;
@@ -25,7 +30,7 @@ body{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding-left: 15px;
 }
-.container button{
+.wrapper button{
     border-radius: 20px;
     border: none;
     padding: 5px 20px;
@@ -38,7 +43,7 @@ body{
     display: flex;
 
 }
-.container button:hover{
+.wrapper button:hover{
 background-color: white;
 color: black;
 }
@@ -52,6 +57,7 @@ color: black;
     align-items: center;
     font-family: 'Roboto', sans-serif;
     justify-content: center;
+    position: relative;
 }
 .todo-select{
 position: absolute;

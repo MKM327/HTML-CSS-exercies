@@ -30,9 +30,11 @@ body{
     top:26px;
     transition: visibility 0s, opacity 0.5s linear;
 
+
 }
 
 .popup-open{
     visibility: visible;
     opacity: 1;
+
 }
