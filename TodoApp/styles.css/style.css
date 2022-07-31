@@ -12,11 +12,13 @@ body{
     width: 55%;
 }
 .todo-item{
+    position: relative;
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
 }
 .todo-content{
+    position: relative;
     border: solid 1px black;
     padding: 4px;
     margin-top: 5px;
@@ -55,7 +57,7 @@ color: black;
     height: 100%;
     display: flex;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     justify-content: center;
     position: relative;
 }
@@ -84,4 +86,33 @@ padding: .2em;
 .wrapper-dark button{
     background-color: white;
     color: black;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transition:  .5 all;
+}
+
+.arrow-btn{
+    background-color: white !important;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  transition:  .5 all;
+
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition:  .5 all;
+
+  }
+.moved-down{
+position: absolute;
+top: 220px;
+width: 100%;
 }

@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="stylesheet" href="./styles.css/details.css" />
     <link rel="stylesheet" href="./styles.css/menu.css" />
     <link rel="stylesheet" href="./styles.css/style.css" />
     <title>Todo App</title>
@@ -20,7 +18,7 @@
       <option value="light">Light</option>
       <option value="dark">Dark</option>
     </select>
-    <div class="wrapper">
+    <div class="wrapper dark">
       <div class="todo-save-menu" id="todo-save-menu">
         <div class="save-menu-wrapper">
           <div class="menu-close">
@@ -52,17 +50,54 @@
         <button onclick="openAddMenu()">Add New Note</button>
         <div class="todo-content">
           <div class="todo-item">
-            <span>asdaskdjkşaşa</span>
+            <div>
+              <button
+                class="test"
+                id="rotate-btn"
+                onclick="rotate('rotateArrow','todoDetails');"
+              >
+                <i id="rotateArrow" class="arrow right"></i>
+              </button>
+              <span>asdaskdjkşaşa</span>
+            </div>
             <div>
               <button>X</button>
               <button>U</button>
             </div>
+            <div class="todo-details details-closed" id="todoDetails">
+              <div>
+                <h3>asdaskdjkşaşa</h3>
+                <span>Date</span>
+              </div>
+
+              <div class="details-description">
+                <p>
+                  DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription
+                </p>
+              </div>
+            </div>
           </div>
           <div class="todo-item">
-            <span>asdaskdjkşaşa</span>
+            <div>
+              <button
+                class="test"
+                id="rotate-btn"
+                onclick="rotate('rotateArrow2','todoDetails2');"
+              >
+                <i id="rotateArrow2" class="arrow right"></i>
+              </button>
+              <span>asdaskdjkşaşa</span>
+            </div>
             <div>
               <button>X</button>
               <button>U</button>
+            </div>
+            <div class="todo-details details-closed" id="todoDetails2">
+              <div>
+                <h3>asdaskdjkşaşa</h3>
+                <span>Date</span>
+              </div>
+              <span>Description</span>
             </div>
           </div>
         </div>
