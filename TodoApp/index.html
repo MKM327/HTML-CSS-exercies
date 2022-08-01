@@ -11,38 +11,53 @@
     <link rel="stylesheet" href="./styles/details.css" />
     <link rel="stylesheet" href="./styles/menu.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/toolbar.css" />
     <title>Todo App</title>
   </head>
   <body>
-    <select name="select" id="todo-select" class="todo-select">
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select>
-    <div class="wrapper dark">
+    <div class="toolbar">
+      <h3>To do App</h3>
+      <input
+        type="text"
+        name="search-area"
+        id=""
+        class="input-text toolbar-search"
+        placeholder="Search"
+      />
+
+      <select name="select" id="todo-select" class="todo-select">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+    <div class="wrapper">
       <div class="todo-save-menu" id="todo-save-menu">
         <div class="save-menu-wrapper">
           <div class="menu-close">
             <button onclick="closeAddMenu()">X</button>
           </div>
-          <div>
-            <input
-              name="input-header"
-              type="text"
-              class="input-text input-text-header"
-              placeholder="Header"
-            />
-          </div>
-          <div class="">
-            <textarea
-              name=""
-              id=""
-              cols=" 90"
-              rows="7"
-              class="input-text-desc"
-              placeholder="Description"
-            ></textarea>
-          </div>
-          <div><button class="input-btn save-menu-btn">Save</button></div>
+          <form action="">
+            <div>
+              <input
+                name="input-header"
+                type="text"
+                class="input-text input-text-header"
+                placeholder="Header"
+                required
+              />
+            </div>
+            <div class="">
+              <textarea
+                name=""
+                id=""
+                cols=" 90"
+                rows="7"
+                class="input-text-desc"
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div><button class="input-btn save-menu-btn">Save</button></div>
+          </form>
         </div>
       </div>
       <div class="container">
