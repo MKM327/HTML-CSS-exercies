@@ -96,21 +96,19 @@ padding: .2em;
 }
 
 .arrow-btn{
-    background-color: white !important;
+background-color: white !important;
 }
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  transition:  .5 all;
+.arrow.right {
+transform: rotate(-45deg);
+transition:  .5s all;
 
-  }
+}
 
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transition:  .5 all;
+.arrow.down {
+transform: rotate(45deg);
+transition:  .5s all;
 
-  }
+}
 .moved-down{
 position: absolute;
 top: 220px;
