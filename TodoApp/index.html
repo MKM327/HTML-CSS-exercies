@@ -17,13 +17,21 @@
   <body>
     <div class="toolbar">
       <h3>To do App</h3>
-      <input
-        type="text"
-        name="search-area"
-        id=""
-        class="input-text toolbar-search"
-        placeholder="Search"
-      />
+      <div class="toolbar-input-wrapper">
+        <input
+          type="text"
+          name="search-area"
+          id=""
+          class="input-text toolbar-search"
+          placeholder="Search"
+        />
+        <div class="toolbar-results">
+          <div class="search-result">
+            <span>Span</span>
+            <span>Date</span>
+          </div>
+        </div>
+      </div>
 
       <select name="select" id="todo-select" class="todo-select">
         <option value="light">Light</option>
