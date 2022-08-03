@@ -5,7 +5,7 @@ html{
 }
 body{
     margin: 0px;
-    height: 100%;
+ 
 
 }
 .container{
@@ -33,7 +33,7 @@ body{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding-left: 15px;
 }
-.wrapper button{
+button{
     border-radius: 20px;
     border: none;
     padding: 5px 20px;
@@ -46,7 +46,7 @@ body{
     display: flex;
 
 }
-.wrapper button:hover{
+button:hover{
     background-color: white;
     color: black;
 }
