@@ -17,7 +17,7 @@ html,body{
     display: grid;
     margin: 5%;
     height: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 5px;
     column-gap: 5px;
 }
@@ -45,14 +45,13 @@ html,body{
     justify-content: space-between;
     align-items: center;
 }
-.add-to-cart{
+.product-button{
     background-color: #868686;
     color: white;
     border: 1px white solid;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
-
 }
 .product::after{
     content: "";
@@ -61,4 +60,11 @@ html,body{
     height: 1px;
     background-color: #868686;
     margin-top: 5px;
+}
+
+
+.product-managment{
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
