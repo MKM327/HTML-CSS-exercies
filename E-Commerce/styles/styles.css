@@ -9,13 +9,13 @@ html,body{
     align-items: center;
     list-style: none;
     margin: 0%;
-    background-color: #868686;
+    background-color: #2D0B00;
     padding:.5em;
     font-size: 1em;
 }
 .container{
     display: grid;
-    margin: 5%;
+    padding: 5%;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 5px;
@@ -32,7 +32,7 @@ html,body{
 
 .navbar-elements a{
     text-decoration: none;
-    color: white;
+    color: #FFF0EB;
 }
 .product{
     padding:5px;
@@ -46,7 +46,7 @@ html,body{
     align-items: center;
 }
 .product-button{
-    background-color: #868686;
+    background-color: #2D0B00;
     color: white;
     border: 1px white solid;
     padding: 5px;
