@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/AddProduct.css" />
+
+    <title>Add Product</title>
+  </head>
+  <body>
+    <nav class="navbar-elements">
+      <div style="color: white">Test</div>
+      <div class="navbar-search">
+        <input type="text" name="" id="" placeholder="Search" />
+      </div>
+      <div class="navbar-icons">
+        <div class="user-img-wrapper">
+          <img
+            class="navbar-user-img"
+            src="images/dummy-speaker-image.jpg"
+            alt=""
+          />
+          <div class="user-dropdown closed">
+            <div class="dropdown-header">
+              <div class="user-dropdown-item">Hello Name</div>
+            </div>
+            <div class="user-dropdown-item">Profile</div>
+            <div class="user-dropdown-item">My Products</div>
+            <div class="user-dropdown-item">Logout</div>
+          </div>
+        </div>
+        <!-- <div class="user-dropdown open" >
+            <div class="dropdown-header">
+              <div class="user-dropdown-item">Welcome</div>
+            </div>
+            <div class="user-dropdown-item">Log in</div>
+            <div class="user-dropdown-item">Register</div>
+        </div> -->
+        <div class="cart-flex">
+          <img src="images/shopping-cart.png" alt="" />
+          <div class="cart-text">Cart</div>
+        </div>
+      </div>
+    </nav>
+    <div class="container add">
+      <form action="|" class="add">
+        <div class="add-img-wrapper">
+          <img
+            src="images/dummy-speaker-image.jpg"
+            alt=""
+            class="add-img-wrapper"
+          />
+          <div><input type="file" class="photo-input" /></div>
+        </div>
+        <div class="add-inputs">
+          <div>
+            <label for="Header" class="input-header">Header</label>
+            <input type="text" name="Header" id="" class="add-input" />
+          </div>
+          <div class="add-input-wrapper">
+            <label for="Header" class="input-header">Description</label>
+            <input type="text" name="Header" id="" class="add-input" />
+          </div>
+          <div class="add-input-wrapper-double">
+            <div>
+              <label for="Header" class="input-header">Quantity</label>
+              <input type="text" name="Header" id="" class="add-input double" />
+            </div>
+            <div>
+              <label for="Header" class="input-header">Type</label>
+              <input type="text" name="Header" id="" class="add-input double" />
+            </div>
+          </div>
+          <div class="add-input-wrapper">
+            <label for="Header" class="input-header">Price</label>
+            <input type="text" name="Header" id="" class="add-input" />
+          </div>
+          <button class="add-btn">Add Product</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
