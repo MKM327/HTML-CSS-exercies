@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/UserProfile.css" />
+    <link rel="stylesheet" href="./styles/AddProduct.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>User Profile</title>
+  </head>
+  <body>
+    <nav class="navbar-elements">
+      <div style="color: white">Test</div>
+      <div class="navbar-search">
+        <input type="text" name="" id="" placeholder="Search" />
+      </div>
+      <div class="navbar-icons">
+        <div class="user-img-wrapper">
+          <img
+            class="navbar-user-img"
+            src="images/dummy-speaker-image.jpg"
+            alt=""
+          />
+          <div class="user-dropdown closed">
+            <div class="dropdown-header">
+              <div class="user-dropdown-item">Hello Name</div>
+            </div>
+            <div class="user-dropdown-item">Profile</div>
+            <div class="user-dropdown-item">My Products</div>
+            <div class="user-dropdown-item">Logout</div>
+          </div>
+        </div>
+        <!-- <div class="user-dropdown open" >
+            <div class="dropdown-header">
+              <div class="user-dropdown-item">Welcome</div>
+            </div>
+            <div class="user-dropdown-item">Log in</div>
+            <div class="user-dropdown-item">Register</div>
+        </div> -->
+        <div class="cart-flex">
+          <img src="images/shopping-cart.png" alt="" />
+          <div class="cart-text">Cart</div>
+        </div>
+      </div>
+    </nav>
+    <div class="container profile">
+      <div class="profile-update">
+        <div class="profile-info">
+          <div>
+            <label for="Name">Name</label>
+            <input type="text" class="add-input" id="Name" />
+          </div>
+          <div>
+            <label for="Name">Surname</label>
+            <input type="text" class="add-input" id="Name" />
+          </div>
+          <div>
+            <label for="Name">Email</label>
+            <input type="email" class="add-input" id="Name" />
+          </div>
+          <button class="add-btn">Update</button>
+        </div>
+        <div class="profile-info">
+          <div>
+            <label for="Name">Old Password</label>
+            <input type="email" class="add-input" id="Name" />
+          </div>
+          <div>
+            <label for="Name">New Password</label>
+            <input type="email" class="add-input" id="Name" />
+          </div>
+          <button class="add-btn">Update Password</button>
+        </div>
+      </div>
+      <div class="user-products">
+        <h3>My Products</h3>
+        <div class="user-row">
+          <div class="product-wrapper">
+            <div class="user-image-wrapper">
+              <img src="images/shoe1.jpg" alt="" />
+            </div>
+            <div class="product-info-wrapper">
+              <div class="user-header-wrapper">
+                <div class="user-product-header">Header</div>
+              </div>
+              <div class="user-product-header">Price : {price}</div>
+              <div class="user-product-header">Quantity : quan</div>
+            </div>
+          </div>
+
+      </div>
+    </div></body>
+</html>
