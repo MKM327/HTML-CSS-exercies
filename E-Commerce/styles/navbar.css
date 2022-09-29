@@ -61,6 +61,7 @@
 .cart-flex{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .cart-text{
     color: white;
