@@ -1,0 +1,58 @@
+:root {
+  --green: rgb(29, 185, 84);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+.main-wrapper {
+  margin-left: 183px;
+  background: radial-gradient(farthest-corner at top, #444444 0%, #000000 100%);
+  color: var(--white);
+  padding: 0px 20px 0px 15px;
+  height: 100%;
+}
+.upper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0px 0px;
+  margin-bottom: 20px;
+}
+.upper-wrapper div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.upper-wrapper div:first-child div > img {
+  width: 100%;
+  max-width: 20px;
+}
+.arrow-left,
+.arrow-right {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 50%;
+  padding: 3px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--black);
+  gap: 10px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 20px;
+  border-radius: 50%;
+}
+.profile-image img {
+  width: 100%;
+  border-radius: 50%;
+}
