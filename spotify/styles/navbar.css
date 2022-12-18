@@ -32,6 +32,7 @@ html {
   margin: 0;
   list-style: none;
 }
+
 .navbar-list li:nth-child(4) {
   margin-top: 20px;
 }
@@ -40,6 +41,7 @@ html {
   align-items: center;
   padding: 10px 0;
   gap: 15px;
+  cursor: pointer;
 }
 
 .navbar-img {
