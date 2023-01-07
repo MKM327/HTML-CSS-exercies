@@ -1,0 +1,42 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Rowdies", cursive;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+}
+.text-wrapper {
+  position: relative;
+}
+.text {
+  font-size: 60px;
+  transform: rotateZ(10deg) translateY(100%);
+}
+.text-wrapper > div:first-child {
+  color: #fff;
+  position: absolute;
+  right: 8em;
+  bottom: 4em;
+  overflow: hidden;
+}
+
+.text-wrapper > div:nth-child(2) {
+  overflow: hidden;
+}
+.first {
+  color: #ff0000;
+  transition: transform 0.5s ease-in-out;
+}
+.second {
+  transition: transform 0.9s ease-in-out;
+}
+.text-wrapper:hover .first,
+.text-wrapper:hover .second {
+  transform: rotate(0deg) translateY(0%);
+}
