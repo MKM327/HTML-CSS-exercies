@@ -525,18 +525,6 @@ video {
   position: relative;
 }
 
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-6 {
-  bottom: 1.5rem;
-}
-
-.bottom-12 {
-  bottom: 3rem;
-}
-
 .bottom-14 {
   bottom: 3.5rem;
 }
@@ -564,10 +552,6 @@ video {
 
 .mt-28 {
   margin-top: 7rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .ml-56 {
@@ -618,20 +602,12 @@ video {
   height: auto;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-1 {
   height: 0.25rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-6 {
-  height: 1.5rem;
+.h-screen {
+  height: 100vh;
 }
 
 .w-52 {
@@ -642,6 +618,10 @@ video {
   width: 7rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-48 {
   width: 12rem;
 }
@@ -650,12 +630,16 @@ video {
   width: 6rem;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-56 {
+  width: 14rem;
 }
 
 .w-auto {
   width: auto;
+}
+
+.w-1\/1 {
+  width: 100%;
 }
 
 .w-16 {
@@ -666,24 +650,61 @@ video {
   width: 83.333333%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .w-1\/4 {
   width: 25%;
 }
 
-.w-1\/1 {
-  width: 100%;
+.max-w-full {
+  max-width: 100%;
 }
 
-.w-64 {
-  width: 16rem;
+.max-w-md {
+  max-width: 28rem;
 }
 
-.w-60 {
-  width: 15rem;
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.w-56 {
-  width: 14rem;
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
 }
 
 .cursor-pointer {
@@ -718,44 +739,6 @@ video {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-56 {
-  gap: 14rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-24 {
-  gap: 6rem;
-}
-
-.divide-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(2px * var(--tw-divide-x-reverse));
-  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
-.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
-}
-
-.divide-x-8 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(8px * var(--tw-divide-x-reverse));
-  border-left-width: calc(8px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
-.divide-solid > :not([hidden]) ~ :not([hidden]) {
-  border-style: solid;
-}
-
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -772,12 +755,12 @@ video {
   border-width: 1px;
 }
 
-.border-r {
-  border-right-width: 1px;
+.border-2 {
+  border-width: 2px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
+.border-r {
+  border-right-width: 1px;
 }
 
 .border-b-2 {
@@ -788,19 +771,14 @@ video {
   border-style: solid;
 }
 
-.border-red-900 {
+.border-gray-200 {
   --tw-border-opacity: 1;
-  border-color: rgb(127 29 29 / var(--tw-border-opacity));
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-l-gray-900 {
@@ -813,14 +791,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -828,20 +806,12 @@ video {
      object-fit: cover;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-roboto {
+  font-family: Roboto, sans-serif;
 }
 
 .text-xs {
@@ -886,6 +856,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-150 {
   transition-duration: 150ms;
 }
@@ -908,4 +884,28 @@ body {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (max-width: 1024px) {
+  .m-lg\:hidden {
+    display: none;
+  }
+
+  .m-lg\:w-10 {
+    width: 2.5rem;
+  }
+
+  .m-lg\:opacity-0 {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:opacity-0 {
+    opacity: 0;
+  }
 }
