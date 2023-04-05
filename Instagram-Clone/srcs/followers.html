@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/dist/main-page-tailwind.css" />
     <title>Profile</title>
   </head>
-  <body>
+  <body class="relative overflow-hidden">
     <nav
       class="fixed h-full w-60 m-lg:w-10 m-5 mt-0 border-l-gray-900 border-r"
     >
@@ -199,6 +199,7 @@
         </li>
       </ul>
     </nav>
+    <div class="absolute w-full h-full bg-black opacity-50 z-10"></div>
     <div class="h-full ml-64">
       <section class="h-full w-full">
         <main class="p-5 mx-auto w-5/6">
@@ -377,6 +378,44 @@
           </div>
         </main>
       </section>
+    </div>
+    <div
+      class="absolute w-96 bg-white z-20 rounded-2xl max-w-sm"
+      style="left: calc(50% - 200px); top: calc(20%)"
+    >
+      <div
+        class="flex items-center justify-between box-border p-3 border-y-0 border-b-2 border-t-0"
+      >
+        <div></div>
+        <span class="font-medium">Followers</span>
+        <button class="w-7 cursor-pointer">
+          <img src="/images/FollowerClose.svg" alt="" />
+        </button>
+      </div>
+      <div class="overflow-y-auto overflow-hidden max-h-96">
+        <div class="flex justify-between p-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12">
+              <img
+                src="/images/temp.jpg"
+                alt=""
+                class="aspect-square object-cover rounded-full box-border"
+              />
+            </div>
+            <div>
+              <span class="font-medium block">Username</span>
+              <span class="block"> Fullname</span>
+            </div>
+          </div>
+          <div>
+            <button
+              class="bg-gray-200 hover:bg-gray-300 p-2 font-medium rounded-lg"
+            >
+              Remove
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
