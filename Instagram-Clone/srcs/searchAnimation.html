@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main-page-tailwind.css" />
+    <title>SearchAnimation</title>
+  </head>
+  <body>
+    <nav
+      class="fixed h-full w-52 m-lg:w-10 m-5 mt-0 border-l-gray-900 border-r group open"
+      id="nav"
+    >
+      <div
+        class="w-28 my-8 m-lg:hidden m-lg:opacity-0 transition-all group-[.open]:hidden"
+      >
+        <img src="../images/insta_logo.png" alt="" />
+      </div>
+      <div
+        class="w-6 my-8 lg:opacity-100 lg:hidden transition-opacity group-[.open]:block"
+      >
+        <img src="../images/icons8-instagram.svg" alt="" />
+      </div>
+      <ul>
+        <li
+          class="w-48 h-14 rounded-3xl flex hover:bg-slate-50 cursor-pointer justify-start items-center group"
+        >
+          <div class="flex">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-home-page-24.png"
+                alt=""
+                class="mr-5 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden group-[.open]:invisible">Home</div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="w-48 h-14 rounded-3xl flex group-[.open]:w-10 hover:bg-slate-50 cursor-pointer justify-start items-center group"
+        >
+          <div class="flex" id="searchBtn">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-search.svg"
+                alt=""
+                class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden group-[.open]:invisible">Search</div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="w-48 h-14 rounded-3xl flex hover:bg-slate-50 cursor-pointer justify-start items-center group"
+        >
+          <div class="flex">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-compass-50.png"
+                alt=""
+                class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden group-[.open]:invisible">Explore</div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="w-48 h-14 rounded-3xl flex hover:bg-slate-50 cursor-pointer justify-start items-center group"
+        >
+          <div class="flex">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-instagram-reels.svg"
+                alt=""
+                class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden group-[.open]:invisible">Reels</div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="w-48 h-12 rounded-3xl flex hover:bg-slate-50 cursor-pointer justify-start items-center group"
+        >
+          <div class="flex">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-facebook-messenger.svg"
+                alt=""
+                class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden group-[.open]:invisible">Messages</div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="w-48 h-14 rounded-3xl flex hover:bg-slate-50 cursor-pointer justify-start items-center group"
+        >
+          <div class="flex">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-favorite-30.png"
+                alt=""
+                class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden group-[.open]:invisible">Notifications</div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="w-48 h-14 rounded-3xl flex hover:bg-slate-50 cursor-pointer justify-start items-center group"
+        >
+          <div class="flex">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-add-new-50.png"
+                alt=""
+                class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden group-[.open]:invisible">Create</div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="w-48 h-14 rounded-3xl flex hover:bg-slate-50 cursor-pointer justify-start items-center group"
+        >
+          <div class="flex">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-male-user-50.png"
+                alt=""
+                class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden group-[.open]:invisible">Profile</div>
+            </div>
+          </div>
+        </li>
+        <li
+          class="w-48 h-14 rounded-3xl flex hover:bg-slate-50 cursor-pointer justify-start items-center mt-28 group relative"
+        >
+          <ul class="absolute hidden h-auto bg-white bottom-14 w-56 shadow-lg">
+            <li
+              class="w-auto flex justify-between z-10 h-12 items-center border-b-2 border-gray-200"
+            >
+              <div>Settings</div>
+              <div class="w-6">
+                <img src="../images/icons8-settings.svg" alt="" />
+              </div>
+            </li>
+            <li
+              class="w-auto flex justify-between z-10 h-12 items-center border-b-2 border-gray-200"
+            >
+              <div>Save</div>
+              <div class="w-6">
+                <img src="../images/icons8-bookmark-64.png" alt="" />
+              </div>
+            </li>
+            <li
+              class="w-auto flex justify-between z-10 h-12 items-center border-b-2 border-gray-200"
+            >
+              <div>Switch appearance</div>
+              <div class="w-6">
+                <img src="../images/icons8-crescent-moon-50.png" alt="" />
+              </div>
+            </li>
+            <li
+              class="w-auto flex justify-between z-10 h-12 items-center border-b-2 border-gray-200"
+            >
+              <div>Your activity</div>
+              <div class="w-6">
+                <img src="../images/icons8-clock.svg" alt="" />
+              </div>
+            </li>
+            <li
+              class="w-auto flex justify-between z-10 h-12 items-center border-b-2 border-gray-200"
+            >
+              <div>Report a problem</div>
+              <div class="w-6">
+                <img src="../images/icons8-failed-24.png" alt="" />
+              </div>
+            </li>
+            <div class="bg-gray-100 w-1/1 h-1"></div>
+            <li
+              class="w-auto flex justify-between z-10 h-12 items-center border-b-2 border-gray-200"
+            >
+              <div>Switch accounts</div>
+            </li>
+            <li
+              class="w-auto flex justify-between z-10 h-12 items-center border-b-2 border-gray-200"
+            >
+              <div>Log out</div>
+            </li>
+          </ul>
+          <div class="flex">
+            <div class="w-24 flex">
+              <img
+                src="../images/icons8-menu.svg"
+                alt=""
+                class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
+              />
+              <div class="m-lg:hidden">More</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <script src="/srcs/search.js"></script>
+  </body>
+</html>
