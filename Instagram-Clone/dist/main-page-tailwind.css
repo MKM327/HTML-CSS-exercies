@@ -554,14 +554,6 @@ video {
   margin: 1.25rem;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -655,22 +647,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.ml-28 {
-  margin-left: 7rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -733,10 +709,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .max-h-96 {
@@ -839,18 +811,6 @@ video {
   width: 100%;
 }
 
-.w-\[calc\(100\%-20px\)\] {
-  width: calc(100% - 20px);
-}
-
-.w-\[calc\(100\%-5px\)\] {
-  width: calc(100% - 5px);
-}
-
-.w-\[calc\(100\%-2px\)\] {
-  width: calc(100% - 2px);
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -889,6 +849,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1048,14 +1012,14 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.border-gray-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-x-transparent {
+  border-left-color: transparent;
+  border-right-color: transparent;
 }
 
 .border-y-transparent {
@@ -1063,9 +1027,13 @@ video {
   border-bottom-color: transparent;
 }
 
-.border-x-transparent {
-  border-left-color: transparent;
-  border-right-color: transparent;
+.border-b-transparent {
+  border-bottom-color: transparent;
+}
+
+.border-l-black {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-l-gray-900 {
@@ -1076,23 +1044,6 @@ video {
 .border-t-black {
   --tw-border-opacity: 1;
   border-top-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-l-black {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.border-t-transparent {
-  border-top-color: transparent;
-}
-
-.border-r-transparent {
-  border-right-color: transparent;
-}
-
-.border-b-transparent {
-  border-bottom-color: transparent;
 }
 
 .bg-black {
@@ -1169,6 +1120,10 @@ video {
   padding-right: 12rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -1197,8 +1152,12 @@ video {
   padding-left: 9rem;
 }
 
-.pr-48 {
-  padding-right: 12rem;
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-44 {
+  padding-right: 11rem;
 }
 
 .pt-3 {
@@ -1211,34 +1170,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-\[12rem-\] {
-  padding-right: 12rem-;
-}
-
-.pr-\[12rem-16\] {
-  padding-right: 12rem-16;
-}
-
-.pr-4 {
-  padding-right: 1rem;
-}
-
-.pr-44 {
-  padding-right: 11rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-right {
@@ -1281,12 +1212,12 @@ video {
   font-weight: 500;
 }
 
-.font-thin {
-  font-weight: 100;
-}
-
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .text-blue-400 {
@@ -1329,21 +1260,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-900 {
-  --tw-text-opacity: 1;
-  color: rgb(127 29 29 / var(--tw-text-opacity));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-
 .opacity-50 {
   opacity: 0.5;
 }
@@ -1357,10 +1273,6 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.outline-gray-500 {
-  outline-color: #6b7280;
 }
 
 .transition {
@@ -1458,11 +1370,6 @@ body {
   cursor: pointer;
 }
 
-.hover\:border-gray-400:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
-}
-
 .hover\:border-l-gray-400:hover {
   --tw-border-opacity: 1;
   border-left-color: rgb(156 163 175 / var(--tw-border-opacity));
@@ -1515,12 +1422,6 @@ body {
 
 .group:hover .group-hover\:opacity-20 {
   opacity: 0.2;
-}
-
-@media (max-width: 640px) {
-  .m-sm\:hidden {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
