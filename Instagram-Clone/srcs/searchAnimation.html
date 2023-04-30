@@ -9,9 +9,73 @@
   </head>
   <body>
     <nav
-      class="fixed h-full w-52 m-lg:w-10 m-5 mt-0 border-l-gray-900 border-r group open"
+      class="fixed h-full w-52 m-lg:w-10 m-5 mt-0 border-l-gray-900 border-r group z-30"
       id="nav"
+      data="test"
     >
+      <section
+        class="h-full fixed left-[68px] top-0 w-[450px] rounded-md shadow-[8px_0_24px_-10px_rgba(0,0,0,0.15)] -translate-x-[520px] z-0 group-[.open]:-translate-x-0 group-[.open]:z-0 transition-all duration-500"
+      >
+        <div
+          class="border group-[.open]:visible invisible border-x-0 flex flex-col pb-5 border-t-0 box-border border-b-gray-300"
+        >
+          <h3 class="font-medium text-2xl p-6">Search</h3>
+          <div class="relative p-3">
+            <input
+              type="text"
+              class="bg-gray-100 w-full rounded-lg h-10 pl-4"
+              placeholder="Search"
+            />
+            <span class="absolute right-5 top-4">X</span>
+          </div>
+        </div>
+        <div class="p-6 group-[.open]:visible invisible">
+          <div class="flex justify-between mb-3">
+            <span>Recent</span>
+            <span class="text-blue-400 font-semibold">Clear all</span>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center justify-center gap-2">
+                <div class="w-12">
+                  <img
+                    src="/images/temp.jpg"
+                    class="aspect-square rounded-full"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <span class="block font-bold">Username</span>
+                  <span>FullName</span>
+                  <span>is_Following</span>
+                </div>
+              </div>
+              <div>
+                <span class="text-2xl">X</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center justify-center gap-2">
+                <div class="w-12">
+                  <img
+                    src="/images/temp.jpg"
+                    class="aspect-square rounded-full"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <span class="block font-bold">Username</span>
+                  <span>FullName</span>
+                  <span>is_Following</span>
+                </div>
+              </div>
+              <div>
+                <span class="text-2xl">X</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div
         class="w-28 my-8 m-lg:hidden m-lg:opacity-0 transition-all group-[.open]:hidden"
       >
@@ -103,7 +167,9 @@
                 alt=""
                 class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
               />
-              <div class="m-lg:hidden group-[.open]:invisible">Notifications</div>
+              <div class="m-lg:hidden group-[.open]:invisible">
+                Notifications
+              </div>
             </div>
           </div>
         </li>
@@ -198,7 +264,7 @@
                 alt=""
                 class="mr-5 w-6 group-hover:scale-105 transition duration-150 ease-in-out"
               />
-              <div class="m-lg:hidden">More</div>
+              <div class="m-lg:hidden group-[.open]:hidden">More</div>
             </div>
           </div>
         </li>
