@@ -11,12 +11,12 @@
     <title>ChatApp</title>
   </head>
   <body class="bg-primary-color">
-    <div class="w-4/5 m-auto h-full flex items-center">
+    <div class="w-11/12 m-auto h-full flex items-center">
       <div
-        class="w-full h-4/5 rounded-lg bg-primary-color border flex gap-2 border-text-color"
+        class="w-full h-4/5 rounded-lg bg-primary-color border flex border-text-color"
       >
         <div
-          class="flex flex-col items-center justify-between h-full border-r p-2 border-r-text-color"
+          class="flex flex-col items-center justify-between h-full border-r p-2 pt-4 border-r-text-color"
         >
           <div class="">
             <div class="rounded-full bg-white p-2">
@@ -54,19 +54,223 @@
             </div>
           </div>
         </div>
-        <section class="flex flex-col">
-          <div class="flex items-center justify-center">
-            <div>
-              <i class="fa-solid fa-id-card text-text-color"></i>
+        <main class="flex-1 flex">
+          <section class="flex flex-col border-r border-text-color">
+            <div
+              class="flex items-center justify-between gap-5 pl-5 pt-3 pr-5 pb-5 border-b border-text-color"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-id-card text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-white font-medium">Murat Kaan Mesüm</h4>
+                  <span class="text-text-color text-sm">account</span>
+                </div>
+              </div>
+              <div
+                class="w-10 rounded-full border border-text-color flex items-center justify-center aspect-square"
+              >
+                <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+              </div>
             </div>
-            <div>
-              <h4 class="text-white">NAME</h4>
-              <span class="text-white">account</span>
+            <div class="flex flex-col w-full gap-2 flex-1 overflow-hidden">
+              <!--here-->
+              <div class="p-5">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="w-full rounded-lg bg-[rgb(32,36,38)] outline-none placeholder:text-text-color p-2 focus:text-text-color"
+                  placeholder="Search or start a new chat..."
+                />
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex justify-between pl-5 pr-3">
+                  <h4 class="text-white font-medium">Online now</h4>
+                  <span class="text-text-color">More ></span>
+                </div>
+                <div
+                  class="flex gap-2 pl-5 w-full max-w-[300px] overflow-hidden"
+                >
+                  <div
+                    class="bg-purple-500 flex-shrink-0 flex-grow-0 basis-10 rounded-full aspect-square w-10 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white"></i>
+                  </div>
+                  <div
+                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white"></i>
+                  </div>
+                  <div
+                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white"></i>
+                  </div>
+                  <div
+                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white"></i>
+                  </div>
+                  <div
+                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white"></i>
+                  </div>
+                  <div
+                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white"></i>
+                  </div>
+                  <div
+                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col h-full gap-2">
+                <div>
+                  <h4 class="text-white font-medium">Messages</h4>
+                </div>
+                <div class="overflow-y-scroll flex-1 basis-10">
+                  <div class="flex justify-between hover:bg-gray-700 p-3">
+                    <div class="flex gap-2">
+                      <div
+                        class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-id-card text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-medium text-sm">
+                          APTAL KOPEK BORAN
+                        </h4>
+                        <sp class="text-text-color text-sm">Last message</sp>
+                      </div>
+                    </div>
+                    <div class="text-text-color text-xs">13.10pm</div>
+                  </div>
+                  <div class="flex justify-between hover:bg-gray-700 p-3">
+                    <div class="flex gap-2">
+                      <div
+                        class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-id-card text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-medium text-sm">
+                          APTAL KOPEK BORAN
+                        </h4>
+                        <sp class="text-text-color text-sm">Last message</sp>
+                      </div>
+                    </div>
+                    <div class="text-text-color text-xs">13.10pm</div>
+                  </div>
+                  <div class="flex justify-between hover:bg-gray-700 p-3">
+                    <div class="flex gap-2">
+                      <div
+                        class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-id-card text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-medium text-sm">
+                          APTAL KOPEK BORAN
+                        </h4>
+                        <sp class="text-text-color text-sm">Last message</sp>
+                      </div>
+                    </div>
+                    <div class="text-text-color text-xs">13.10pm</div>
+                  </div>
+                  <div class="flex justify-between hover:bg-gray-700 p-3">
+                    <div class="flex gap-2">
+                      <div
+                        class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-id-card text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-medium text-sm">
+                          APTAL KOPEK BORAN
+                        </h4>
+                        <sp class="text-text-color text-sm">Last message</sp>
+                      </div>
+                    </div>
+                    <div class="text-text-color text-xs">13.10pm</div>
+                  </div>
+                  <div class="flex justify-between hover:bg-gray-700 p-3">
+                    <div class="flex gap-2">
+                      <div
+                        class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-id-card text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-medium text-sm">
+                          APTAL KOPEK BORAN
+                        </h4>
+                        <sp class="text-text-color text-sm">Last message</sp>
+                      </div>
+                    </div>
+                    <div class="text-text-color text-xs">13.10pm</div>
+                  </div>
+                  <div class="flex justify-between hover:bg-gray-700 p-3">
+                    <div class="flex gap-2">
+                      <div
+                        class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-id-card text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-medium text-sm">
+                          APTAL KOPEK BORAN
+                        </h4>
+                        <sp class="text-text-color text-sm">Last message</sp>
+                      </div>
+                    </div>
+                    <div class="text-text-color text-xs">13.10pm</div>
+                  </div>
+                  <div class="flex justify-between hover:bg-gray-700 p-3">
+                    <div class="flex gap-2">
+                      <div
+                        class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-id-card text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-medium text-sm">
+                          APTAL KOPEK BORAN
+                        </h4>
+                        <sp class="text-text-color text-sm">Last message</sp>
+                      </div>
+                    </div>
+                    <div class="text-text-color text-xs">13.10pm</div>
+                  </div>
+                  <div class="flex justify-between hover:bg-gray-700 p-3">
+                    <div class="flex gap-2">
+                      <div
+                        class="bg-purple-500 rounded-full aspect-square w-10 flex items-center justify-center"
+                      >
+                        <i class="fa-solid fa-id-card text-white"></i>
+                      </div>
+                      <div>
+                        <h4 class="text-white font-medium text-sm">
+                          APTAL KOPEK BORAN
+                        </h4>
+                        <sp class="text-text-color text-sm">Last message</sp>
+                      </div>
+                    </div>
+                    <div class="text-text-color text-xs">13.10pm</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div><i class="fa-solid fa-ellipsis-vertical text-white"></i></div>
-          </div>
-          <div></div>
-        </section>
+          </section>
+          <section class="flex-1">wow2</section>
+        </main>
       </div>
     </div>
     <script
