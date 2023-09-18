@@ -55,7 +55,9 @@
           </div>
         </div>
         <main class="flex-1 flex">
-          <section class="flex flex-col border-r border-text-color">
+          <section
+            class="flex flex-col border-r border-text-color items-center justify-center"
+          >
             <div
               class="flex items-center justify-between gap-5 pl-5 pt-3 pr-5 pb-5 border-b border-text-color"
             >
@@ -77,7 +79,6 @@
               </div>
             </div>
             <div class="flex flex-col w-full gap-2 flex-1 overflow-hidden">
-              <!--here-->
               <div class="p-5">
                 <input
                   type="text"
@@ -133,10 +134,10 @@
                 </div>
               </div>
               <div class="flex flex-col h-full gap-2">
-                <div>
+                <div class="pl-4">
                   <h4 class="text-white font-medium">Messages</h4>
                 </div>
-                <div class="overflow-y-scroll flex-1 basis-10">
+                <div class="overflow-y-scroll scroll-smooth flex-1 basis-10">
                   <div class="flex justify-between hover:bg-gray-700 p-3">
                     <div class="flex gap-2">
                       <div
@@ -164,7 +165,9 @@
                         <h4 class="text-white font-medium text-sm">
                           APTAL KOPEK BORAN
                         </h4>
-                        <sp class="text-text-color text-sm">Last message</sp>
+                        <sp class="text-sent-message-color text-xs"
+                          >Typing...</sp
+                        >
                       </div>
                     </div>
                     <div class="text-text-color text-xs">13.10pm</div>
@@ -269,7 +272,88 @@
               </div>
             </div>
           </section>
-          <section class="flex-1">wow2</section>
+          <section class="flex-1 flex">
+            <div class="flex-1 overflow-hidden flex flex-col">
+              <div
+                class="flex items-center justify-between pl-5 pt-3 pr-5 pb-5 border-b border-text-color"
+              >
+                <div class="flex gap-2 items-center">
+                  <div
+                    class="bg-purple-500 rounded-full aspect-square w-10 h-10 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white"></i>
+                  </div>
+                  <div>
+                    <div>
+                      <h4 class="text-white font-medium">Another good name</h4>
+                    </div>
+                    <div>
+                      <span class="text-sent-message-color text-sm"
+                        >Typing...</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-10 rounded-full border border-text-color flex items-center justify-center aspect-square"
+                >
+                  <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                </div>
+              </div>
+              <div
+                class="p-3 bg-secondary-color flex flex-col gap-5 overflow-y-scroll flex-1"
+              >
+                <div class="self-start">
+                  <div
+                    id="coming-message"
+                    class="bg-primary-color rounded-3xl p-3 text-text-color rounded-tl-none w-fit max-w-[250px]"
+                  >
+                    Lorem lipsum wow works really interesting
+                  </div>
+                </div>
+                <div class="self-end">
+                  <div
+                    id="sent-message"
+                    class="bg-sent-message-color rounded-3xl p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
+                  >
+                    Lorem lipsum wow works really interesting
+                  </div>
+                </div>
+                <div class="self-start">
+                  <div
+                    id="coming-message"
+                    class="bg-primary-color rounded-3xl p-3 text-text-color rounded-tl-none w-fit max-w-[250px]"
+                  >
+                    Lorem lipsum wow works really interesting
+                  </div>
+                </div>
+                <div class="self-end">
+                  <div
+                    id="sent-message"
+                    class="bg-sent-message-color rounded-3xl p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
+                  >
+                    Lorem lipsum wow works really interesting
+                  </div>
+                </div>
+                <div class="self-end">
+                  <div
+                    id="sent-message"
+                    class="bg-sent-message-color rounded-3xl p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
+                  >
+                    Lorem lipsum wow works really interesting
+                  </div>
+                </div>
+                <div class="self-end">
+                  <div
+                    id="sent-message"
+                    class="bg-sent-message-color rounded-3xl p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
+                  >
+                    Lorem lipsum wow works really interesting
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </div>

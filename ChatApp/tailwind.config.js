@@ -8,7 +8,7 @@ module.exports = {
         "secondary-color": "#0a0e0f",
         "sent-message-color": "#48a6c3",
         "coming-message-color": "#0a0e0f",
-        "text-color": "#5d5f61",
+        "text-color": "#898b8c",
       },
     },
   },
