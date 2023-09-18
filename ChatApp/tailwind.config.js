@@ -9,6 +9,8 @@ module.exports = {
         "sent-message-color": "#48a6c3",
         "coming-message-color": "#0a0e0f",
         "text-color": "#898b8c",
+        "profile-bg-color": "#252b2e",
+        "profile-file-text-color": "#a6a8a9",
       },
     },
   },

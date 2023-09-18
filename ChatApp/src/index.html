@@ -96,40 +96,16 @@
                 <div
                   class="flex gap-2 pl-5 w-full max-w-[300px] overflow-hidden"
                 >
-                  <div
-                    class="bg-purple-500 flex-shrink-0 flex-grow-0 basis-10 rounded-full aspect-square w-10 flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-id-card text-white"></i>
-                  </div>
-                  <div
-                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-id-card text-white"></i>
-                  </div>
-                  <div
-                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-id-card text-white"></i>
-                  </div>
-                  <div
-                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-id-card text-white"></i>
-                  </div>
-                  <div
-                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-id-card text-white"></i>
-                  </div>
-                  <div
-                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-id-card text-white"></i>
-                  </div>
-                  <div
-                    class="bg-purple-500 flex-shrink-0 flex-grow-0 rounded-full aspect-square basis-10 flex items-center justify-center"
-                  >
-                    <i class="fa-solid fa-id-card text-white"></i>
+                  <div class="flex flex-col items-center gap-2 relative">
+                    <div
+                      class="bg-purple-500 flex-shrink-0 flex-grow-0 basis-10 rounded-full aspect-square w-10 flex items-center justify-center"
+                    >
+                      <i class="fa-solid fa-id-card text-white"></i>
+                    </div>
+                    <span class="text-xs text-text-color">nickname</span>
+                    <div
+                      class="absolute w-3 aspect-square -top-0 right-2 bg-sent-message-color rounded-full"
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -330,7 +306,7 @@
                 <div class="self-end">
                   <div
                     id="sent-message"
-                    class="bg-sent-message-color rounded-3xl p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
+                    class="bg-sent-message-color rounded-3xl p-3 font-semibold text-primary-color rounded-tr-none w-fit max-w-[250px]"
                   >
                     Lorem lipsum wow works really interesting
                   </div>
@@ -338,7 +314,7 @@
                 <div class="self-end">
                   <div
                     id="sent-message"
-                    class="bg-sent-message-color rounded-3xl p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
+                    class="bg-sent-message-color rounded-3xl font-semibold p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
                   >
                     Lorem lipsum wow works really interesting
                   </div>
@@ -346,9 +322,123 @@
                 <div class="self-end">
                   <div
                     id="sent-message"
-                    class="bg-sent-message-color rounded-3xl p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
+                    class="bg-sent-message-color rounded-3xl font-semibold p-3 text-primary-color rounded-tr-none w-fit max-w-[250px]"
                   >
                     Lorem lipsum wow works really interesting
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-1/3 border-l border-l-text-color flex flex-col gap-4basis-auto max-w-full overflow-hidden"
+            >
+              <div
+                class="flex justify-between items-center p-5 h-[80.8px] border-b border-text-color"
+              >
+                <div class="flex items-center justify-center ml-4">
+                  <h4 class="text-white text-lg box-border">Details</h4>
+                </div>
+                <div
+                  class="rounded-full border w-10 flex items-center mr-3 justify-center border-text-color aspect-square p-2"
+                >
+                  <i class="fa-solid fa-x text-white text-xs"></i>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2 items-center justify-center">
+                <div class="flex flex-col gap-2 items-center justify-center">
+                  <div
+                    class="bg-purple-500 rounded-full aspect-square w-1/2 flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-id-card text-white text-3xl"></i>
+                  </div>
+                  <div class="flex flex-col items-center justify-center">
+                    <h3 class="text-white">Another Good Name</h3>
+                    <span class="text-sent-message-color"> Online</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-4 basis-auto">
+                <div class="flex justify-between pl-3">
+                  <div class="flex gap-2 text-sm">
+                    <h4>Media</h4>
+                    <div>
+                      <span>14</span>
+                      <span>pictures</span>
+                    </div>
+                  </div>
+                  <div
+                    class="text-sent-message-color text-sm mr-3 underline underline-offset-2"
+                  >
+                    View all
+                  </div>
+                </div>
+                <div class="flex items-center justify-center">
+                  <div class="grid grid-cols-2 gap-2">
+                    <div class="aspect-square rounded-full">
+                      <img
+                        src="https://picsum.photos/id/237/200/300"
+                        class="w-full h-full object-cover rounded-2xl"
+                      />
+                    </div>
+                    <div class="aspect-square object-cover">
+                      <img
+                        src="https://picsum.photos/id/237/200/300"
+                        class="w-full h-full object-cover rounded-2xl"
+                      />
+                    </div>
+                    <div class="aspect-square object-cover">
+                      <img
+                        src="https://picsum.photos/id/237/200/300"
+                        class="w-full h-full object-cover rounded-2xl"
+                      />
+                    </div>
+                    <div class="bg-profile-bg-color w relative rounded-2xl">
+                      <div class="absolute top-10 right-10">
+                        <span class="text-white text-2xl">+11 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between pl-3">
+                <div class="flex gap-2 text-sm">
+                  <h4>Files</h4>
+                  <div>
+                    <span>14</span>
+                    <span>Files</span>
+                  </div>
+                </div>
+                <div
+                  class="text-sent-message-color text-sm mr-3 underline underline-offset-2"
+                >
+                  View all
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="p-3 bg-profile-bg-color">
+                  <div
+                    class="bg-primary-color p-2 rounded-md flex gap-2 items-center"
+                  >
+                    <div>
+                      <i class="fa-regular fa-file text-sent-message-color"></i>
+                    </div>
+                    <span
+                      class="text-profile-file-text-color text-sm font-semibold"
+                      >File Name</span
+                    >
+                  </div>
+                </div>
+                <div class="p-3 bg-profile-bg-color">
+                  <div
+                    class="bg-primary-color p-2 rounded-md flex gap-2 items-center"
+                  >
+                    <div>
+                      <i class="fa-regular fa-file text-sent-message-color"></i>
+                    </div>
+                    <span
+                      class="text-profile-file-text-color text-sm font-semibold"
+                      >File Name</span
+                    >
                   </div>
                 </div>
               </div>
