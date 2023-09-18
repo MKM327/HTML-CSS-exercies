@@ -6,13 +6,15 @@ html,
 body {
   height: 100%;
   color: #5d5f61;
+  
 }
 ::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
+  background-color: black;
 }
 
 ::-webkit-scrollbar-track {
-  background: #171b1d; /* Track color */
+  background: #0a0e0f; /* Track color */
 }
 
 ::-webkit-scrollbar-thumb {
