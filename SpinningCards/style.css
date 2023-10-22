@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+}
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.wrapper {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+.frame-image {
+  position: relative;
+}
+.frame-image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.image-text {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
+.frame-image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  background-color: black;
+  z-index: 2;
+}
+.frame-image:hover {
+  transition: all 1s ease-in-out;
+  scale: 0;
+}
